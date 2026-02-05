@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Game</title>
+  </head>
+  <body>
+    <div id="max-score">The max score is 50</div>
+    <div id="game-container">
+      <section id="player1">
+        <h3>PLAYER 1</h3>
+        <div id="score">0</div>
+        <div id="currentScore">0</div>
+      </section>
+      <section id="player2">
+        <h3>PLAYER 2</h3>
+        <div id="score">0</div>
+        <div id="currentScore">0</div>
+      </section>
+    </div>
+    <section class="dices">
+      <div class="dice1">
+        <img id="dice1Img" src="images/d1.png" />
+      </div>
+      <div class="dice2">
+        <img id="dice2Img" src="images/d1.png" />
+      </div>
+    </section>
+    <section class="choices">
+      <button id="new-game">New Game</button>
+      <button id="roll">
+        Roll
+        <div id="count"></div>
+      </button>
+      <button id="hold">Hold</button>
+    </section>
+  </body>
+</html>

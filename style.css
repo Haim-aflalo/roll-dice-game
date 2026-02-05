@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgb(44, 44, 126);
+}
+#game-container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 70%;
+  height: 50%;
+  margin-top: 15%;
+  border-radius: 32px;
+  background-color: rgb(197, 197, 235);
+}
+#player1 {
+  background-color: rgb(133, 133, 212);
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 32px;
+}
+#player2 {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+h3 {
+  grid-area: 1/1/2/1;
+  text-align: center;
+  align-self: center;
+}
+#score {
+  grid-area: 2/1/3/1;
+  width: 30%;
+  height: 40%;
+  font-size: 3rem;
+  justify-self: center;
+  text-align: center;
+}
+
+#currentScore {
+  grid-area: 3/1/4/1;
+  width: 30%;
+  height: 40%;
+  font-size: 3rem;
+  justify-self: center;
+  text-align: center;
+}
+#max-score {
+  position: absolute;
+  justify-self: center;
+  top: 3%;
+  background-color: rgb(170, 218, 218);
+  height: 5%;
+  width: 50%;
+  border-radius: 32px;
+  text-align: center;
+  align-content: center;
+  font-size: large;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  width: 80%;
+  height: 5%;
+  margin: 10% 13%;
+}
+#new-game {
+  grid-area: 1/1/1/2;
+  width: 80%;
+  height: 100%;
+}
+#roll {
+  grid-area: 1/2/1/3;
+  width: 80%;
+  height: 100%;
+}
+#hold {
+  grid-area: 1/3/1/4;
+  width: 80%;
+  height: 100%;
+}
+.dices {
+  display: flex;
+  width: 40%;
+  height: 10%;
+  margin: 20% 25%;
+  gap: 30%;
+}
+.dice1 {
+  grid-area: 1/1/1/2;
+}
+.dice2 {
+  grid-area: 1/2/1/3;
+}
+.dices img {
+  width: 5em;
+  height: 80%;
+}
+
